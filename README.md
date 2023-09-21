@@ -1,10 +1,12 @@
-# Beginner Chat API Frontend
+# Chat2Meme
 
-_A getting started project for working with the ChatGPT API in the frontend_
+_A ChatGPT-based meme generator. Is this a good idea? No! But did I do it anyway? You betcha!_
 
-This application was initialized with [`npm create vite@latest`](https://vitejs.dev/guide/) in React with TypeScript and uses the [Chat Completions API](https://platform.openai.com/docs/guides/gpt/chat-completions-api) from OpenAI.
+This application is built off the [Beginner Chat API Frontend](https://github.com/bildungsroman/beginner-chat-api) and adds another API call, this time to the [Imgflip API](https://imgflip.com/api).
 
-It has everything you need to quickly get started using the [ChatGPT API](https://platform.openai.com/docs/introduction) in a frontend project.
+Why? Because memes!
+
+![api meme](./public/api-meme.jpeg)
 
 ## Getting started
 

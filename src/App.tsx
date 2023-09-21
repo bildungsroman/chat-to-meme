@@ -1,5 +1,4 @@
 import { FormEvent, useState } from "react";
-import openaiLogo from "/openai.svg";
 import { callChatAPI } from "./utils/callChatAPI";
 import "./App.css";
 
@@ -17,12 +16,7 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://platform.openai.com/docs/introduction" target="_blank">
-          <img src={openaiLogo} className="logo" alt="OpenAI logo" />
-        </a>
-      </div>
-      <h1>Hello, AI!</h1>
+      <h1>Chat2Meme</h1>
       <form onSubmit={handleSubmit}>
         <div className="card">
           <input
