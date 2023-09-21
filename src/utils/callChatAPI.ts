@@ -1,15 +1,14 @@
 import { Dispatch, SetStateAction } from "react";
 
 export async function callChatAPI(
-  prompt: string,
   setResponseData: Dispatch<SetStateAction<string>>,
 ) {
   // See https://platform.openai.com/docs/models/model-endpoint-compatibility
   const APIBody = {
     model: "gpt-3.5-turbo",
-    messages: [{ role: "user", content: prompt }],
+    messages: [{ role: "user", content: "Generate a meme caption" }],
     temperature: 0,
-    max_tokens: 360,
+    max_tokens: 100,
     top_p: 1.0,
     frequency_penalty: 0.0,
     presence_penalty: 0.0,
@@ -33,7 +32,7 @@ export async function callChatAPI(
       return;
     }
     const data = await response.json();
-    // console.log(data);
+    console.log(data);
     const firstChoice = data.choices[0].message.content;
     setResponseData(firstChoice);
     return;

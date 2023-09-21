@@ -9,20 +9,23 @@
   padding: 2em;
 }
 
-.prompt-input {
-  padding: 2em;
-  min-width: 40vw;
-}
-
 .response {
   margin-top: 2em;
   padding: 2em;
   width: 40vw;
-  min-height: 40vh;
   background-color: #333;
+  border-radius: 25px;
 }
 
-.response.hidden {
+.buttons {
+  padding: 1em;
+}
+
+.buttons * {
+  margin: 1em;
+}
+
+.hidden {
   display: none;
 }
 
